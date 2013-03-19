@@ -83,6 +83,7 @@ group :assets do
   gem 'bootstrap-datepicker-rails'
   gem 'jquery-fileupload-rails'
   gem 'bootstrap-timepicker-rails-addon'
+  gem 'angular-rails'
 
   # 推荐安装 node.js，而不要 therubyracer
   #gem 'libv8', '3.11.8.3', :platforms => :ruby # therubyracer 从 0.11 开始没有依赖 lib8. http://git.io/EtMkCg
