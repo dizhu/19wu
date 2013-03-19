@@ -6,6 +6,10 @@ article.event
         h2 = time_merge(@event)
 
       .event-body
+        /
+          div ng-controller='TasksController'
+            ul
+              li ng-repeat='task in tasks' {{task.title}}, {{task.finished}}
         == @event.content_html
 
     .span4
