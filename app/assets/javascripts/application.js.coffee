@@ -5,6 +5,9 @@
 #= require jquery-fileupload/basic
 #= require jquery.textarea.caret
 #= require bootstrap-timepicker
+#= require angular.min
+#= require angle-up
+#= require_tree ./angular
 #= require_self
 $ ->
   body = $("body")
@@ -15,7 +18,7 @@ $ ->
     weekStart: parseInt(I18n.date.weekstart, 10)
 
   body.on "click", ".datepicker-trigger", ->
-    el = $(this).closest(".date").find('.datepicker');
+    el = $(this).closest(".date").find('.datepicker')
     datepicker = el.data("datepicker")
     unless datepicker?
       el.datepicker(datepickerDefaults)
